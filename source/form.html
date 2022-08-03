@@ -47,19 +47,29 @@
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="review-form__group">
             <legend class="review-form__title">Представьтесь:</legend>
-            <label class="review-form__label" for="review-form-name">Имя*:</label>
-            <input class="review-form__input" type="text" name="review-form-name" id="review-form-name" placeholder="Пётр" required>
-            <label class="review-form__label" for="review-form-surname">Фамилия*:</label>
-            <input class="review-form__input" type="text" name="review-form-surname" id="review-form-surname" placeholder="Пустота" required>
-            <label class="review-form__label" for="review-form-patronymic">Отчество:</label>
-            <input class="review-form__input" type="text" name="review-form-patronymic" id="review-form-patronymic" placeholder="Викторович">
+            <label class="review-form__field">
+              <span class="review-form__label">Имя*:</span>
+              <input class="review-form__input" type="text" name="review-form-name" placeholder="Пётр" required>
+            </label>
+            <label class="review-form__field">
+              <span class="review-form__label">Фамилия*:</span>
+              <input class="review-form__input" type="text" name="review-form-surname" placeholder="Пустота" required>
+            </label>
+            <label class="review-form__field">
+              <span class="review-form__label">Отчество:</span>
+              <input class="review-form__input" type="text" name="review-form-patronymic" placeholder="Викторович">
+            </label>
           </fieldset>
           <fieldset class="review-form__group">
             <legend class="review-form__title">Контактная информация:</legend>
-            <label class="review-form__label" for="review-form-phone">Контактный телефон*:</label>
-            <input class="review-form__input" type="tel" name="review-form-phone" id="review-form-phone" placeholder="Введите телефон" required>
-            <label class="review-form__label" for="review-form-email">Электронная почта*:</label>
-            <input class="review-form__input" type="email" name="review-form-email" id="review-form-email" placeholder="Введите e-mail" required>
+            <label class="review-form__field">
+              <span class="review-form__label">Контактный телефон*:</span>
+              <input class="review-form__input" type="tel" name="review-form-phone" placeholder="Введите телефон" required>
+            </label>
+            <label class="review-form__field">
+              <span class="review-form__label">Электронная почта*:</span>
+              <input class="review-form__input" type="email" name="review-form-email" placeholder="Введите e-mail" required>
+            </label>
           </fieldset>
           <fieldset class="review-form__group">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
