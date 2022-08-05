@@ -11,7 +11,7 @@
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+        <img class="main-header__logo-pic" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -20,23 +20,23 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>Форма отзыва</a>
+              <a class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div class="hero">
+      <div class="hero hero--inner-page">
         <img class="hero__img" src="img/logo-sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон отстой!">
       </div>
       <section class="feedback">
@@ -44,36 +44,36 @@
           <h1 class="heading__title">Оставьте свой отзыв</h1>
           <p class="heading__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
         </div>
-        <form class="feedback-form feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="feedback-form__group feedback-form-group">
-            <legend class="feedback-form-group__title">Представьтесь:</legend>
-            <label class="feedback-form-group__field text-field">
+        <form class="form feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__group form-group">
+            <legend class="form-group__title">Представьтесь:</legend>
+            <label class="form-group__field text-field">
               <span class="text-field__label">Имя*:</span>
-              <input class="text-field__input" type="text" name="feedback-form-name" placeholder="Пётр" required>
+              <input class="text-field__input" type="text" name="form-name" placeholder="Пётр" required>
             </label>
-            <label class="feedback-form-group__field text-field">
+            <label class="form-group__field text-field">
               <span class="text-field__label">Фамилия*:</span>
-              <input class="text-field__input" type="text" name="feedback-form-surname" placeholder="Пустота" required>
+              <input class="text-field__input" type="text" name="form-surname" placeholder="Пустота" required>
             </label>
-            <label class="feedback-form-group__field text-field">
+            <label class="form-group__field text-field">
               <span class="text-field__label">Отчество:</span>
-              <input class="text-field__input" type="text" name="feedback-form-patronymic" placeholder="Викторович">
+              <input class="text-field__input" type="text" name="form-patronymic" placeholder="Викторович">
             </label>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form-group">
-            <legend class="feedback-form-group__title">Контактная информация:</legend>
-            <label class="feedback-form-group__field text-field text-field--phone">
+          <fieldset class="form__group form-group">
+            <legend class="form-group__title">Контактная информация:</legend>
+            <label class="form-group__field text-field text-field--phone">
               <span class="text-field__label">Контактный телефон*:</span>
-              <input class="text-field__input" type="tel" name="feedback-form-phone" placeholder="Введите телефон" required>
+              <input class="text-field__input" type="tel" name="form-phone" placeholder="Введите телефон" required>
             </label>
-            <label class="feedback-form-group__field text-field text-field--email">
+            <label class="form-group__field text-field text-field--email">
               <span class="text-field__label">Электронная почта*:</span>
-              <input class="text-field__input" type="email" name="feedback-form-email" placeholder="Введите e-mail" required>
+              <input class="text-field__input" type="email" name="form-email" placeholder="Введите e-mail" required>
             </label>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form-group">
-            <legend class="feedback-form-group__title">Ваше общее впечатление:</legend>
-            <ul class="feedback-form-group__list radio-list">
+          <fieldset class="form__group form-group">
+            <legend class="form-group__title">Ваше общее впечатление:</legend>
+            <ul class="form-group__list radio-list">
               <li class="radio-list__item">
                 <label class="control radio-list__option">
                   <input class="visually-hidden control__input control__input--radio" type="radio" name="impression" value="positive" checked/>
@@ -97,9 +97,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form-group">
-            <legend class="feedback-form-group__title">Посещенные достопримечательности:</legend>
-            <ul class="feedback-form-group__list checkbox-list">
+          <fieldset class="form__group form-group">
+            <legend class="form-group__title">Посещенные достопримечательности:</legend>
+            <ul class="form-group__list checkbox-list">
               <li class="checkbox-list__item">
                 <label class="control checkbox-list__option">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="attractions" value="bridge" checked/>
@@ -130,13 +130,13 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form-group">
-            <legend class="feedback-form-group__title">Опишите свои эмоции:</legend>
-            <textarea class="feedback-form-group__textarea textarea-field" name="message" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="form__group form-group">
+            <legend class="form-group__title">Опишите свои эмоции:</legend>
+            <textarea class="form-group__textarea textarea-field" name="message" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <div class="feedback-form__inner">
-            <button class="button feedback-form__button-submit" type="submit">Отправить отзыв</button>
-            <span class="footnote feedback-form__footnote">* — обязательные поля</span>
+          <div class="form__inner">
+            <button class="button form__button-submit" type="submit">Отправить отзыв</button>
+            <span class="footnote form__footnote">* — обязательные поля</span>
           </div>
         </form>
       </section>
@@ -145,36 +145,17 @@
       <a class="hashtag" href="https://twitter.com/hashtag/visitsedona">#visitsedona</a>
       <ul class="socials">
         <li class="socials_item">
-          <a class="socials__link" href="#">
-            <svg class="socials__icon" aria-hidden="true" focusable="false" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h48v48H0z"/>
-              <g clip-path="url(#a)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"/>
-              </g>
-              <defs>
-                <clippath id="a">
-                  <path transform="translate(12 12)" d="M0 0h24v24H0z"/>
-                </clippath>
-              </defs>
-            </svg>
+          <a class="socials__link social__link--vkontakte" href="#">
             <span class="visually-hidden">Vkontakte.</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <svg class="socials__icon" aria-hidden="true" focusable="false" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48"/>
-              <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"/>
-            </svg>
+          <a class="socials__link social__link--telegram" href="#">
             <span class="visually-hidden">Telegram.</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <svg class="socials__icon" aria-hidden="true" focusable="false" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48"/>
-              <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"/>
-            </svg>
+          <a class="socials__link social__link--youtube" href="#">
             <span class="visually-hidden">Youtube.</span>
           </a>
         </li>
