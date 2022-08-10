@@ -1,0 +1,27 @@
+@use "../global/variables.scss";
+
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features__sublist {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features__item----theme-dark {
+  background-color: variables.$bg-gray;
+}
+
+.features__figure {
+  margin: 0;
+  background-color: variables.$bg-blue;
+}
+
+.features__picture {
+  display: block;
+}

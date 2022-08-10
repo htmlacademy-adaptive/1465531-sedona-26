@@ -1,5 +1,5 @@
-// GLOBAL
-@import "./global/variables.scss";
-
 // MODULES
-@import "./blocks/page.scss";
+@use "./blocks/page.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/features.scss";

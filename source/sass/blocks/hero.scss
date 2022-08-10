@@ -1,0 +1,7 @@
+@use "../global/variables.scss";
+
+.hero {
+  background-color: variables.$bg-blue;
+  background-image: url("../../img/bg-hero-mobile.jpg");
+  background-size: cover;
+}
