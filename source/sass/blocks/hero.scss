@@ -2,6 +2,10 @@
 
 .hero {
   background-color: base.$bg-blue;
-  background-image: url("../../img/bg-hero-mobile.jpg");
+  background-image: url("../../img/hero-index-mobile.jpg");
   background-size: cover;
+
+  &--inner-page {
+    background-image: url("../../img/hero-inner-mobile.jpg");
+  }
 }
