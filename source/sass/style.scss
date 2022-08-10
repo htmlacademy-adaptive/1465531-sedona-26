@@ -1,4 +1,5 @@
-// Начните писать стили здесь
-body {
-  background: rgb(151, 192, 231);
-}
+// GLOBAL
+@import "./global/variables.scss";
+
+// MODULES
+@import "./blocks/page.scss";
