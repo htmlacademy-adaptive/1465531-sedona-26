@@ -1,7 +1,7 @@
-@use "../global/variables.scss";
+@use "../base.scss";
 
 .hero {
-  background-color: variables.$bg-blue;
+  background-color: base.$bg-blue;
   background-image: url("../../img/bg-hero-mobile.jpg");
   background-size: cover;
 }

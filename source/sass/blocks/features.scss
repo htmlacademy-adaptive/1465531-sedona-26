@@ -1,4 +1,4 @@
-@use "../global/variables.scss";
+@use "../base.scss";
 
 
 .features__list {
@@ -14,12 +14,12 @@
 }
 
 .features__item----theme-dark {
-  background-color: variables.$bg-gray;
+  background-color: base.$bg-gray;
 }
 
 .features__figure {
   margin: 0;
-  background-color: variables.$bg-blue;
+  background-color: base.$bg-blue;
 }
 
 .features__picture {

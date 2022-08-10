@@ -1,4 +1,4 @@
-@use "../global/variables.scss";
+@use "../base.scss";
 
 .page {
   height: 100%;
@@ -6,12 +6,12 @@
 
 .page__body {
   margin: 0;
-  background-color: variables.$bg-light-gray;
+  background-color: base.$bg-light-gray;
 }
 
 .page__container {
   max-width: 320px;
   margin: auto;
-  background-color: variables.$bg-white;
+  background-color: base.$bg-white;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }

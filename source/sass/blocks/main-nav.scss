@@ -1,5 +1,5 @@
-@use "../global/variables.scss";
+@use "../base.scss";
 
 .main-nav__wrapper {
-  background-color: variables.$bg-blue;
+  background-color: base.$bg-blue;
 }
