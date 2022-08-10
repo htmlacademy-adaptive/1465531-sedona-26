@@ -1,0 +1,6 @@
+@use "../base.scss";
+
+.form-field__control {
+  border: none;
+  background-color: base.$bg-light-gray;
+}
