@@ -1,12 +1,19 @@
 @use "../base.scss";
 
 .heading {
+  padding: 32px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: base.$text-gray;
+}
+
+.heading__inner {
+  width: 270px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .heading__title {

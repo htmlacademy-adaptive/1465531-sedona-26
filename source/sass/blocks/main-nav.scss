@@ -1,6 +1,7 @@
 @use "../base.scss";
 
 .main-nav {
+  position: static;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -30,4 +31,11 @@
   text-decoration: none;
   text-align: center;
   color: inherit;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
 }

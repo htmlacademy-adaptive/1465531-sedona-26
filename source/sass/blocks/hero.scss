@@ -1,6 +1,7 @@
 @use "../base.scss";
 
 .hero {
+  padding: 90px 19px 85px;
   color: base.$text-white;
   background-color: base.$bg-blue;
   background-image: url("../../img/hero-index-mobile.jpg");
@@ -9,4 +10,9 @@
   &--inner-page {
     background-image: url("../../img/hero-inner-mobile.jpg");
   }
+}
+
+.hero__img {
+  display: block;
+  margin: auto;
 }

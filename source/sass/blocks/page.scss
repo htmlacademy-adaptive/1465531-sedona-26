@@ -5,7 +5,9 @@
 }
 
 .page__body {
+  display: flex;
   margin: 0;
+  min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -13,7 +15,6 @@
 }
 
 .page__container {
-  max-width: 320px;
   margin: auto;
   background-color: base.$bg-white;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
