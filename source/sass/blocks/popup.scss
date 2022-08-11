@@ -1,0 +1,29 @@
+@use "../base.scss";
+
+.popup {
+  // display: none;
+  width: 320px;
+  box-sizing: border-box;
+  background-color: base.$bg-white;
+  text-align: center;
+
+  &--error {
+    .popup__wrapper {
+      padding: 45px 42px 35px;
+    }
+  }
+
+  &--success {
+    .popup__wrapper {
+      padding: 39px 39px 30px 37px;
+    }
+  }
+}
+
+.popup__inner {
+  padding: 20px;
+
+  &--custom-background {
+    background-color: base.$bg-light-gray;
+  }
+}

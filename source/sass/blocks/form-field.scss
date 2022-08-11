@@ -1,0 +1,26 @@
+@use "../base.scss";
+
+.form-field {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: base.$text-gray;
+}
+
+.form-field__control {
+  min-width: 280px;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: base.$text-black;
+  background-color: base.$bg-light-gray;
+  border: none;
+}
+
+.form-field__control::placeholder {
+  color: rgba($color: base.$text-black, $alpha: 0.3);
+}
