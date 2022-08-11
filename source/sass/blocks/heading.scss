@@ -1,0 +1,21 @@
+@use "../base.scss";
+
+.heading {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: base.$text-dark-gray;
+}
+
+.heading__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: base.$text-black;
+
+  &--accent {
+    font-size: 21px;
+  }
+}

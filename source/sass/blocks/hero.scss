@@ -1,6 +1,7 @@
 @use "../base.scss";
 
 .hero {
+  color: base.$text-white;
   background-color: base.$bg-blue;
   background-image: url("../../img/hero-index-mobile.jpg");
   background-size: cover;

@@ -1,25 +1,36 @@
 @use "../base.scss";
 
-
-.features__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+.features {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: base.$text-dark-gray;
 }
 
+.features__list,
 .features__sublist {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.features__item--theme-dark {
-  background-color: base.$bg-gray;
-}
-
 .features__figure {
   margin: 0;
+  color: base.$text-white;
   background-color: base.$bg-blue;
+}
+
+.feature__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: base.$text-black;
+
+  &--theme-light {
+    color: base.$text-white;
+  }
 }
 
 .features__picture {
