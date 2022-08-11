@@ -1,0 +1,23 @@
+@use "../base.scss";
+
+.card {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: base.$text-black;
+}
+
+.card__title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card__author {
+  color: base.$text-dark-gray;
+}
+
+.card__counter {
+  font-weight: 700;
+  text-transform: uppercase;
+}
