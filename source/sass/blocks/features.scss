@@ -22,17 +22,10 @@
   background-color: base.$bg-blue;
 }
 
-.feature__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: base.$text-black;
-
-  &--theme-light {
-    color: base.$text-white;
-  }
-}
-
 .features__picture {
   display: block;
+}
+
+.features__item--theme-dark {
+  background-color: base.$bg-gray;
 }
