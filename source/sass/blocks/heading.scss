@@ -1,7 +1,6 @@
 @use "../base.scss";
 
 .heading {
-  padding: 32px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -11,15 +10,12 @@
 }
 
 .heading__inner {
-  display: grid;
-  row-gap: 35px;
   width: 270px;
   margin: 0 auto;
   text-align: center;
 }
 
 .heading__title {
-  margin: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;

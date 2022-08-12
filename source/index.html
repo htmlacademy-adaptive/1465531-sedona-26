@@ -43,9 +43,9 @@
       </div>
       <section class="features">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <div class="heading">
+        <div class="features__wrapper heading">
           <div class="heading__inner">
-            <p class="heading__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="features__title heading__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="heading__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
         </div>
@@ -53,7 +53,7 @@
           <li class="features__panorama">
             <figure class="features__figure">
               <figcaption class="features__figure-caption feature feature--order">
-                <h3 class="feature__subtitle subtitle feature__subtitle subtitle--theme-light">Настоящий городок</h3>
+                <h3 class="feature__subtitle subtitle subtitle--theme-light">Настоящий городок</h3>
                 <p class="feature__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </figcaption>
               <img class="features__picture" src="img/sedona-city.jpg" width="320" height="260" alt="Красивый вид на центр города Седона с цветами на фоне домов.">
@@ -76,7 +76,7 @@
           <li class="features__panorama">
             <figure class="features__figure features__figure--reverse">
               <figcaption class="features__figure-caption feature feature--order">
-                <h3 class="feature__subtitle subtitle feature__subtitle subtitle--theme-light">Там есть мост дьявола</h3>
+                <h3 class="feature__subtitle subtitle subtitle--theme-light">Там есть мост дьявола</h3>
                 <p class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </figcaption>
               <img class="features__picture" src="img/devil-bridge.jpg" width="320" height="260" alt="Обтёсанный природой каменный мост сквозь ущелье.">
@@ -98,14 +98,16 @@
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <div class="heading">
-          <p class="heading__title heading__title--accent">Заинтересовались?</p>
-          <p class="heading__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="search__wrapper heading">
+          <div class="heading__inner">
+            <p class="search__title heading__title heading__title--accent">Заинтересовались?</p>
+            <p class="heading__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="button button--size-s search__button" href="#">Найти Гостиницу</a>
+          </div>
         </div>
-        <a class="button button--size-s search__button" href="#">Найти Гостиницу</a>
         <div class="search__map">
           <iframe class="search__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355159.6875539753!2d-111.20944847593856!3d34.79277840200253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1659227893552!5m2!1sru!2sru"
-            width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
+            width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
