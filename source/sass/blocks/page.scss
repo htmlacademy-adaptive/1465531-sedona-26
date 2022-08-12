@@ -29,6 +29,12 @@
   flex-grow: 1;
 }
 
+.page__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page__popup {
   margin: 0 auto;
 }
