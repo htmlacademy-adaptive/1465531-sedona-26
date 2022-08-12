@@ -53,8 +53,9 @@
 
 .features__item--theme-dark {
   position: relative;
-  display: grid;
-  row-gap: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 26px 32px;
   text-align: center;
   background-color: base.$bg-light-gray;
@@ -64,8 +65,11 @@
   position: absolute;
   content: "";
   top: 0;
-  left: 20px;
-  width: 284px;
+  width: 85%;
   height: 1px;
   background-color: base.$bg-gray;
+}
+
+.feature__subtitle--theme-dark {
+  margin-bottom: 44px;
 }
