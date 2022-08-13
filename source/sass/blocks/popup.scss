@@ -3,26 +3,33 @@
 .popup {
   // display: none;
   width: 320px;
+  min-height: 280px;
   background-color: base.$bg-white;
   text-align: center;
-
-  &--error {
-    .popup__wrapper {
-      padding: 45px 42px 35px;
-    }
-  }
-
-  &--success {
-    .popup__wrapper {
-      padding: 39px 39px 30px 37px;
-    }
-  }
 }
 
-.popup__inner {
-  padding: 20px;
+.popup__wrapper--error {
+  padding: 45px 42px 35px;
+}
 
-  &--custom-background {
-    background-color: base.$bg-very-light-gray;
-  }
+.popup__wrapper--success {
+  padding: 44px 37px 40px;
+}
+
+.popup__title {
+  margin: 0 0 25px;
+}
+
+.popup__button--error {
+  min-width: 180px;
+  margin-top: 28px;
+}
+
+.popup__button--success {
+  min-width: 280px;
+}
+
+.popup__inner--custom-background {
+  padding: 20px;
+  background-color: base.$bg-very-light-gray;
 }
