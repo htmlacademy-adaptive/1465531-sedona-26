@@ -1,0 +1,13 @@
+.form-group__list {
+  padding: 0;
+  margin: 0;
+}
+
+.form-group__title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.form-group__field + .form-group__field {
+  margin-top: 16px;
+}

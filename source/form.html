@@ -41,13 +41,15 @@
         <img class="hero__img" src="img/logo-sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон отстой!">
       </div>
       <section class="feedback">
-        <div class="heading">
-          <h1 class="heading__title">Оставьте свой отзыв</h1>
-          <p class="heading__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+        <div class="feedback__wrapper heading">
+          <div class="heading__inner">
+            <h1 class="feedback__title heading__title">Оставьте свой отзыв</h1>
+            <p class="heading__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+          </div>
         </div>
         <form class="form feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title subtitle">Представьтесь:</legend>
+          <div class="form__group form-group">
+            <h3 class="form-group__title subtitle">Представьтесь:</h3>
             <label class="form-group__field form-field">
               <span class="form-field__label">Имя*:</span>
               <input class="form-field__control input" type="text" name="form-name" placeholder="Пётр" required>
@@ -60,9 +62,9 @@
               <span class="form-field__label">Отчество:</span>
               <input class="form-field__control input" type="text" name="form-patronymic" placeholder="Викторович">
             </label>
-          </fieldset>
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title subtitle">Контактная информация:</legend>
+          </div>
+          <div class="form__group form-group">
+            <h3 class="form-group__title subtitle">Контактная информация:</h3>
             <label class="form-group__field form-field">
               <span class="form-field__label">Контактный телефон*:</span>
               <input class="form-field__control input input--phone" type="tel" name="form-phone" placeholder="Введите телефон" required>
@@ -71,9 +73,9 @@
               <span class="form-field__label">Электронная почта*:</span>
               <input class="form-field__control input input--email" type="email" name="form-email" placeholder="Введите e-mail" required>
             </label>
-          </fieldset>
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title subtitle">Ваше общее впечатление:</legend>
+          </div>
+          <div class="form__group form-group">
+            <h3 class="form-group__title subtitle">Ваше общее впечатление:</h3>
             <ul class="form-group__list form-list radio-list">
               <li class="radio-list__item">
                 <label class="control radio-list__option">
@@ -97,9 +99,9 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title subtitle">Посещенные достопримечательности:</legend>
+          </div>
+          <div class="form__group form-group">
+            <h3 class="form-group__title subtitle">Посещенные достопримечательности:</h3>
             <ul class="form-group__list form-list checkbox-list">
               <li class="checkbox-list__item">
                 <label class="control checkbox-list__option">
@@ -130,13 +132,13 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title subtitle">Опишите свои эмоции:</legend>
+          </div>
+          <div class="form__group form-group">
+            <h3 class="form-group__title subtitle">Опишите свои эмоции:</h3>
             <label class="form-group__field form-field">
               <textarea class="form-field__control textarea" name="message" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
-          </fieldset>
+          </div>
           <div class="form__inner">
             <button class="button form__button-submit" type="submit">Отправить отзыв</button>
             <span class="footnote form__footnote">* — обязательные поля</span>
