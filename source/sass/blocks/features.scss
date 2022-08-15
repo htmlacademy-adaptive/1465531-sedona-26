@@ -7,6 +7,12 @@
   font-weight: 400;
   text-transform: uppercase;
   color: base.$text-gray;
+  counter-set: feature;
+}
+
+.feature--order::after {
+  counter-increment: feature;
+  content: "— №"counter(feature) " —";
 }
 
 .features__wrapper {
