@@ -1,1 +1,16 @@
-// @use "test.scss";
+// SCREEN SIZE
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desctop-width: 1200px;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desctop {
+  @media screen and (min-width: $desctop-width) {
+    @content;
+  }
+}
