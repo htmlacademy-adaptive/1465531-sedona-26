@@ -9,9 +9,41 @@
   color: base.$text-gray;
   border-top: 1px solid base.$bg-middle-gray;
   border-bottom: 1px solid base.$bg-middle-gray;
+
+  @include base.tablet {
+    width: 324px;
+    min-height: 347px;
+    padding: 0;
+    border: none;
+  }
 }
 
-.card__title,
+.card--wide {
+  @include base.tablet {
+    width: 648px;
+    min-height: 480px;
+  }
+}
+
+.card__wrapper {
+  @include base.tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.card__img--wide {
+  @include base.tablet {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card__title {
+  margin: 0;
+}
+
 .card__author {
   margin: 0;
 }

@@ -48,10 +48,13 @@
             <p class="heading__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
         </div>
-        <article class="card">
+        <article class="card card--wide">
           <div class="card__wrapper">
             <a class="card__link" href="#">
-              <img class="card__img card__img--wide" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Атмосферное шоссе на просторах Седоны.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+                <img class="card__img card__img--wide" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Атмосферное шоссе на просторах Седоны.">
+              </picture>
             </a>
             <div class="card__info">
               <h3 class="card__title caption">Неродные просторы</h3>
