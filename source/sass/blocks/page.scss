@@ -37,4 +37,10 @@
   flex-direction: column;
   align-items: center;
   padding: 28px 0 22px;
+
+  @include base.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 60px;
+  }
 }
