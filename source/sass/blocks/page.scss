@@ -19,10 +19,13 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: base.$mobile-width;
+  max-width: base.$mobile-width;
   margin: 0 auto;
   background-color: base.$bg-white;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+  @include base.tablet {
+    background-color: rgb(238, 182, 191);
+  }
 }
 
 .page__main {
