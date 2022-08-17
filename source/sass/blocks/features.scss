@@ -10,9 +10,14 @@
   counter-set: feature;
 }
 
-.feature--order::after {
+.feature--order .feature__subtitle::after {
+  display: block;
   counter-increment: feature;
   content: "— №"counter(feature) " —";
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .features__wrapper {
@@ -85,5 +90,5 @@
 }
 
 .feature__subtitle--theme-dark {
-  margin-bottom: 44px;
+  margin-bottom: 17px;
 }
