@@ -28,17 +28,28 @@
   margin: 0 0 35px;
 }
 
-.features__list,
-.features__sublist {
+.features__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @include base.tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .features__sublist {
   display: grid;
   row-gap: 22px;
   padding: 23px 18px 52px;
+  margin: 0;
+  list-style-type: none;
+
+  @include base.tablet {
+    display: flex;
+  }
 }
 
 .features__figure {
@@ -49,6 +60,16 @@
   text-align: center;
   color: base.$text-white;
   background-color: base.$bg-blue;
+
+  @include base.tablet {
+    flex-direction: row;
+  }
+}
+
+.features__figure--reverse {
+  @include base.tablet {
+    flex-direction: row-reverse;
+  }
 }
 
 .features__figure-caption {
@@ -78,6 +99,10 @@
   padding: 26px 32px;
   text-align: center;
   background-color: base.$bg-light-gray;
+
+  @include base.tablet {
+    width: 256px;
+  }
 }
 
 .features__item--theme-dark + .features__item--theme-dark::before {

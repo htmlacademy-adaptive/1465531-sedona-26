@@ -24,7 +24,7 @@
   background-color: base.$bg-white;
 
   @include base.tablet {
-    background-color: rgb(238, 182, 191);
+    max-width: base.$tablet-width;
   }
 }
 

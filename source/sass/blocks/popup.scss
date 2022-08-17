@@ -16,7 +16,7 @@
 }
 
 .popup__container {
-  width: 320px;
+  width: base.$mobile-width;
   text-align: center;
   background-color: base.$bg-white;
 }
