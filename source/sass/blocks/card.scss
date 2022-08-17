@@ -11,6 +11,9 @@
   border-bottom: 1px solid base.$bg-middle-gray;
 
   @include base.tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 324px;
     min-height: 347px;
     padding: 0;
@@ -22,14 +25,6 @@
   @include base.tablet {
     width: 648px;
     min-height: 480px;
-  }
-}
-
-.card__wrapper {
-  @include base.tablet {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
 
