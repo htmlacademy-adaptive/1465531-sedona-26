@@ -1,16 +1,13 @@
-// SCREEN SIZE
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1200px;
+@use "variables.scss";
 
 @mixin tablet {
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: variables.$tablet-width) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: variables.$desktop-width) {
     @content;
   }
 }
