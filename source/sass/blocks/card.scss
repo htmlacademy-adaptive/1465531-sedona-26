@@ -40,15 +40,19 @@
   }
 }
 
+.card__inner {
+  @include base.tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: base.$bg-very-light-gray;
+  }
+}
+
 .card__title {
   margin: 0;
 }
 
 .card__author {
   margin: 0;
-}
-
-.card__info {
-  display: flex;
-  flex-direction: column;
 }
