@@ -1,0 +1,22 @@
+@use "../base.scss";
+
+.button {
+  display: inline-block;
+  min-width: 180px;
+  padding: 18px 14px 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: base.$text-white;
+  background-color: base.$bg-blue;
+  border: none;
+  cursor: pointer;
+
+  &--size-s {
+    padding: 16px;
+  }
+}

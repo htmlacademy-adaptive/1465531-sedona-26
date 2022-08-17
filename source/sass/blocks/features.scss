@@ -1,0 +1,94 @@
+@use "../base.scss";
+
+.features {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: base.$text-gray;
+  counter-set: feature;
+}
+
+.feature--order .feature__subtitle::after {
+  display: block;
+  counter-increment: feature;
+  content: "— №"counter(feature) " —";
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.features__wrapper {
+  padding: 32px 0;
+}
+
+.features__title {
+  margin: 0 0 35px;
+}
+
+.features__list,
+.features__sublist {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features__sublist {
+  display: grid;
+  row-gap: 22px;
+  padding: 23px 18px 52px;
+}
+
+.features__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  color: base.$text-white;
+  background-color: base.$bg-blue;
+}
+
+.features__figure-caption {
+  display: grid;
+  row-gap: 44px;
+  padding: 54px 22px 40px 16px;
+}
+
+.feature__subtitle,
+.feature__description {
+  margin: 0;
+}
+
+.features__picture {
+  display: block;
+}
+
+.features__item--theme-white {
+  padding-left: 47px;
+}
+
+.features__item--theme-dark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 32px;
+  text-align: center;
+  background-color: base.$bg-light-gray;
+}
+
+.features__item--theme-dark + .features__item--theme-dark::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 85%;
+  height: 1px;
+  background-color: base.$bg-gray;
+}
+
+.feature__subtitle--theme-dark {
+  margin-bottom: 17px;
+}

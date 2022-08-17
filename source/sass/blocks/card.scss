@@ -1,0 +1,22 @@
+@use "../base.scss";
+
+.card {
+  padding: 23px 20px 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: base.$text-gray;
+  border-top: 1px solid base.$bg-middle-gray;
+  border-bottom: 1px solid base.$bg-middle-gray;
+}
+
+.card__title,
+.card__author {
+  margin: 0;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+}

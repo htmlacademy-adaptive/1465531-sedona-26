@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Формы отзывов о посещенных отелях и достопримечательностях</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page__container">
-    <header class="main-header">
+    <header class="page__header main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-pic" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
       </a>
@@ -35,62 +36,64 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="page__main">
       <div class="hero hero--inner-page">
         <img class="hero__img" src="img/logo-sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон отстой!">
       </div>
       <section class="feedback">
-        <div class="heading">
-          <h1 class="heading__title">Оставьте свой отзыв</h1>
-          <p class="heading__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+        <div class="feedback__wrapper heading">
+          <div class="heading__inner">
+            <h1 class="feedback__title heading__title">Оставьте свой отзыв</h1>
+            <p class="heading__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+          </div>
         </div>
         <form class="form feedback__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group form-group">
-            <legend class="form-group__title">Представьтесь:</legend>
-            <label class="form-group__field text-field">
-              <span class="text-field__label">Имя*:</span>
-              <input class="text-field__input" type="text" name="form-name" placeholder="Пётр" required>
+            <h3 class="form-group__title subtitle">Представьтесь:</h3>
+            <label class="form-group__field form-field">
+              <span class="form-field__label">Имя*:</span>
+              <input class="form-field__control input" type="text" name="form-name" placeholder="Пётр" required>
             </label>
-            <label class="form-group__field text-field">
-              <span class="text-field__label">Фамилия*:</span>
-              <input class="text-field__input" type="text" name="form-surname" placeholder="Пустота" required>
+            <label class="form-group__field form-field">
+              <span class="form-field__label">Фамилия*:</span>
+              <input class="form-field__control input" type="text" name="form-surname" placeholder="Пустота" required>
             </label>
-            <label class="form-group__field text-field">
-              <span class="text-field__label">Отчество:</span>
-              <input class="text-field__input" type="text" name="form-patronymic" placeholder="Викторович">
-            </label>
-          </fieldset>
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title">Контактная информация:</legend>
-            <label class="form-group__field text-field text-field--phone">
-              <span class="text-field__label">Контактный телефон*:</span>
-              <input class="text-field__input" type="tel" name="form-phone" placeholder="Введите телефон" required>
-            </label>
-            <label class="form-group__field text-field text-field--email">
-              <span class="text-field__label">Электронная почта*:</span>
-              <input class="text-field__input" type="email" name="form-email" placeholder="Введите e-mail" required>
+            <label class="form-group__field form-field">
+              <span class="form-field__label">Отчество:</span>
+              <input class="form-field__control input" type="text" name="form-patronymic" placeholder="Викторович">
             </label>
           </fieldset>
           <fieldset class="form__group form-group">
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <ul class="form-group__list radio-list">
+            <h3 class="form-group__title subtitle">Контактная информация:</h3>
+            <label class="form-group__field form-field">
+              <span class="form-field__label">Контактный телефон*:</span>
+              <input class="form-field__control input input--phone" type="tel" name="form-phone" placeholder="Введите телефон" required>
+            </label>
+            <label class="form-group__field form-field">
+              <span class="form-field__label">Электронная почта*:</span>
+              <input class="form-field__control input input--email" type="email" name="form-email" placeholder="Введите e-mail" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__group form-group">
+            <h3 class="form-group__title subtitle">Ваше общее впечатление:</h3>
+            <ul class="form-group__list form-list radio-list">
               <li class="radio-list__item">
                 <label class="control radio-list__option">
-                  <input class="visually-hidden control__input control__input--radio" type="radio" name="impression" value="positive" checked/>
+                  <input class="visually-hidden control__input radio" type="radio" name="impression" value="positive" checked/>
                   <span class="control__mark"></span>
                   <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="control radio-list__option">
-                  <input class="visually-hidden control__input control__input--radio" type="radio" name="impression" value="negative"/>
+                  <input class="visually-hidden control__input radio" type="radio" name="impression" value="negative"/>
                   <span class="control__mark"></span>
                   <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="control radio-list__option">
-                  <input class="visually-hidden control__input control__input--radio" type="radio" name="impression" value="neutral"/>
+                  <input class="visually-hidden control__input radio" type="radio" name="impression" value="neutral"/>
                   <span class="control__mark"></span>
                   <span class="control__label">Затрудняюсь ответить</span>
                 </label>
@@ -98,32 +101,32 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form-group">
-            <legend class="form-group__title">Посещенные достопримечательности:</legend>
-            <ul class="form-group__list checkbox-list">
+            <h3 class="form-group__title subtitle">Посещенные достопримечательности:</h3>
+            <ul class="form-group__list form-list checkbox-list">
               <li class="checkbox-list__item">
                 <label class="control checkbox-list__option">
-                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="attractions" value="bridge" checked/>
+                  <input class="visually-hidden control__input checkbox" type="checkbox" name="attractions" value="bridge" checked/>
                   <span class="control__mark"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="control checkbox-list__option">
-                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="attractions" value="mountain" checked/>
+                  <input class="visually-hidden control__input checkbox" type="checkbox" name="attractions" value="mountain" checked/>
                   <span class="control__mark"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="control checkbox-list__option">
-                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="attractions" value="park" checked/>
+                  <input class="visually-hidden control__input checkbox" type="checkbox" name="attractions" value="park" checked/>
                   <span class="control__mark"></span>
                   <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="control checkbox-list__option">
-                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="attractions" value="rocks"/>
+                  <input class="visually-hidden control__input checkbox" type="checkbox" name="attractions" value="rocks"/>
                   <span class="control__mark"></span>
                   <span class="control__label">Красные скалы</span>
                 </label>
@@ -131,8 +134,10 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form-group">
-            <legend class="form-group__title">Опишите свои эмоции:</legend>
-            <textarea class="form-group__textarea textarea-field" name="message" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
+            <h3 class="form-group__title subtitle">Опишите свои эмоции:</h3>
+            <label class="form-group__field form-field">
+              <textarea class="form-field__control textarea" name="message" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
           <div class="form__inner">
             <button class="button form__button-submit" type="submit">Отправить отзыв</button>
@@ -141,21 +146,21 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="page__footer main-footer">
       <a class="hashtag" href="https://twitter.com/hashtag/visitsedona">#visitsedona</a>
       <ul class="socials">
-        <li class="socials_item">
-          <a class="socials__link social__link--vkontakte" href="#">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="#">
             <span class="visually-hidden">Vkontakte.</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link social__link--telegram" href="#">
+          <a class="socials__link socials__link--telegram" href="#">
             <span class="visually-hidden">Telegram.</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link social__link--youtube" href="#">
+          <a class="socials__link socials__link--youtube" href="#">
             <span class="visually-hidden">Youtube.</span>
           </a>
         </li>
@@ -169,27 +174,27 @@
     </footer>
   </div>
 
-  <section class="page__popup popup popup--error">
-    <div class="popup__wrapper">
-      <div class="heading">
-        <p class="heading__title">Что-то пошло не так!</p>
+  <div class="page__popup popup popup--error popup--active">
+    <div class="popup__container popup__container--error">
+      <div class="popup__wrapper popup__wrapper--error heading">
+        <p class="popup__title heading__title">Что-то пошло не так!</p>
         <p class="heading__subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button popup__button popup__button--error" type="button">Ok</button>
       </div>
-      <button class="button popup__button" type="button">Ok</button>
     </div>
-  </section>
+  </div>
 
-  <section class="page__popup popup popup--success">
-    <div class="popup__wrapper">
-      <div class="heading">
-        <p class="heading__title">Ваш отзыв отправлен!</p>
+  <div class="page__popup popup popup--success">
+    <div class="popup__container popup__container--success">
+      <div class="popup__wrapper popup__wrapper--success heading">
+        <p class="popup__title heading__title">Ваш отзыв отправлен!</p>
         <p class="heading__subtitle">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       </div>
-      <div class="popup__inner popup__inner--custom-background">
-        <button class="button popup__button" type="button">Закрыть окно</button>
+      <div class="popup__wrapper popup__wrapper--custom-background">
+        <button class="button popup__button popup__button--success" type="button">Закрыть окно</button>
       </div>
     </div>
-  </section>
+  </div>
 </body>
 
 </html>

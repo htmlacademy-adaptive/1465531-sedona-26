@@ -1,0 +1,17 @@
+@use "../base.scss";
+
+.copyright-link {
+  display: flex;
+  align-items: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: base.$text-black;
+  text-decoration: none;
+}
+
+.copyright-link__description {
+  margin-right: 12px;
+}

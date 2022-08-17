@@ -1,0 +1,9 @@
+@use "../base.scss";
+
+.footnote {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba($color: base.$text-gray, $alpha: 0.6);
+}

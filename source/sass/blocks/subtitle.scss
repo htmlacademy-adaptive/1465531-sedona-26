@@ -1,0 +1,14 @@
+@use "../base.scss";
+
+.subtitle {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: base.$text-black;
+
+  &--theme-light {
+    color: base.$text-white;
+  }
+}

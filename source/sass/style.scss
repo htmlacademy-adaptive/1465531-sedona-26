@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// MODULES
+@use "./blocks/advertisement.scss";
+@use "./blocks/button.scss";
+@use "./blocks/card.scss";
+@use "./blocks/control.scss";
+@use "./blocks/copyright-link.scss";
+@use "./blocks/features.scss";
+@use "./blocks/feedback.scss";
+@use "./blocks/footnote.scss";
+@use "./blocks/form.scss";
+@use "./blocks/form-field.scss";
+@use "./blocks/form-group.scss";
+@use "./blocks/form-list.scss";
+@use "./blocks/gallery.scss";
+@use "./blocks/hashtag.scss";
+@use "./blocks/heading.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/page.scss";
+@use "./blocks/popup.scss";
+@use "./blocks/search.scss";
+@use "./blocks/textarea.scss";
+@use "./blocks/visually-hidden.scss";
+
+// FONTS
+@use "./blocks/caption.scss";
+@use "./blocks/subtitle.scss";

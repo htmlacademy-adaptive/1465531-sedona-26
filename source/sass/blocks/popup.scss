@@ -1,0 +1,59 @@
+@use "../base.scss";
+
+.popup {
+  display: none;
+}
+
+.popup--active {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: base.$bg-black, $alpha: 0.4);
+}
+
+.popup__container {
+  width: 320px;
+  text-align: center;
+  background-color: base.$bg-white;
+}
+
+.popup__container--error {
+  min-height: 280px;
+}
+
+.popup__container--success {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 323px;
+}
+
+.popup__wrapper--error {
+  padding: 45px 42px 35px;
+}
+
+.popup__wrapper--success {
+  padding: 39px 39px 30px 37px;
+}
+
+.popup__title {
+  margin: 0 0 25px;
+}
+
+.popup__button--error {
+  min-width: 180px;
+  margin-top: 28px;
+}
+
+.popup__button--success {
+  min-width: 280px;
+}
+
+.popup__wrapper--custom-background {
+  padding: 20px;
+  background-color: base.$bg-very-light-gray;
+}

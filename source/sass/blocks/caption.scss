@@ -1,0 +1,10 @@
+@use "../base.scss";
+
+.caption {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: base.$text-black;
+}
