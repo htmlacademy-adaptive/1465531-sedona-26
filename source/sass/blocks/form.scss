@@ -1,5 +1,12 @@
 @use "../base.scss";
 
+.form {
+  @include base.tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .form__group {
   display: flex;
   flex-direction: column;

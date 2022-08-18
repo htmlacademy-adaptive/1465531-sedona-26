@@ -1,3 +1,5 @@
+@use "../base.scss";
+
 .advertisement__inner {
   padding: 17px 0 38px;
 }
@@ -9,8 +11,10 @@
 }
 
 .advertisement__img {
-  width: 100%;
-  height: auto;
+  @include base.tablet {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .advertisement__play-button {
