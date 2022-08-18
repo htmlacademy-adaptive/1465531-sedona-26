@@ -26,6 +26,10 @@
   @include base.tablet {
     max-width: base.$tablet-width;
   }
+
+  @include base.desktop {
+    max-width: base.$desktop-width;
+  }
 }
 
 .page__main {
