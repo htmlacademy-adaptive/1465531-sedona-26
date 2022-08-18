@@ -1,3 +1,9 @@
+@use "../base.scss";
+
 .feedback__wrapper {
   padding: 36px 0 28px;
+
+  @include base.tablet {
+    padding: 64px 166px 102px;
+  }
 }

@@ -7,4 +7,11 @@
   font-weight: 700;
   color: base.$text-black;
   list-style-type: none;
+
+  @include base.tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 32px;
+  }
 }
