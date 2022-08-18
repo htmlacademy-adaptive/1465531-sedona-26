@@ -20,6 +20,10 @@
     background-color: base.$bg-basic-gray;
     border: none;
   }
+
+  @include base.desktop {
+    width: 400px;
+  }
 }
 
 .card--theme-dark {
@@ -30,7 +34,7 @@
 
 .card--wide {
   @include base.tablet {
-    width: 648px;
+    width: 100%;
     min-height: 480px;
   }
 }
