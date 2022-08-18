@@ -12,8 +12,6 @@
 }
 
 .form-field__control {
-  width: 100%;
-  min-width: 280px;
   padding: 16px;
   font-family: inherit;
   font-size: 18px;
@@ -24,10 +22,25 @@
   border: none;
 
   @include base.tablet {
+    min-width: 280px;
     padding-right: 44px;
+  }
+
+  @include base.desktop {
+    min-width: 430px;
+    padding-right: 63px;
   }
 }
 
 .form-field__control::placeholder {
   color: rgba($color: base.$text-black, $alpha: 0.3);
+}
+
+.form-field__control--textarea {
+  width: 100%;
+
+  @include base.desktop {
+    width: 768px;
+    margin: 0 auto;
+  }
 }

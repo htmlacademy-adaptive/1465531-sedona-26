@@ -12,10 +12,3 @@
     color: base.$text-white;
   }
 }
-
-.subtitle--narrow {
-  @include base.tablet {
-    width: 300px;
-    margin: 0 auto;
-  }
-}

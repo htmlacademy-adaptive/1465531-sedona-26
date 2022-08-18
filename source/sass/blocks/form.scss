@@ -9,10 +9,10 @@
     row-gap: 48px;
     padding: 0 60px;
   }
-}
 
-.form__group {
-  margin: 24px 0;
+  @include base.desktop {
+    padding: 0 120px;
+  }
 }
 
 .form__inner {
@@ -27,6 +27,11 @@
     justify-content: space-between;
     width: 100%;
     grid-column: 1 / -1;
+  }
+
+  @include base.desktop {
+    width: 768px;
+    margin: 0 auto;
   }
 }
 

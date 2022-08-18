@@ -1,0 +1,9 @@
+@use "../base.scss";
+
+.radio-list {
+  @include base.desktop {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 17px;
+    column-gap: 28px;
+  }
+}

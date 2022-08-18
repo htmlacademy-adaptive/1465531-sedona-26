@@ -1,0 +1,8 @@
+@use "../base.scss";
+
+.checkbox-list {
+  @include base.desktop {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 64px;
+  }
+}
