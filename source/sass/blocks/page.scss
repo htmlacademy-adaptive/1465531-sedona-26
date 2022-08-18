@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -20,7 +20,7 @@
   flex-direction: column;
   flex-grow: 1;
   max-width: base.$mobile-width;
-  margin: 0 auto;
+  margin: auto;
   background-color: base.$bg-white;
 
   @include base.tablet {
