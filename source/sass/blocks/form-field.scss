@@ -13,6 +13,7 @@
 
 .form-field__control {
   width: 100%;
+  min-width: 280px;
   padding: 16px;
   font-family: inherit;
   font-size: 18px;
@@ -21,6 +22,10 @@
   color: base.$text-black;
   background-color: base.$bg-basic-gray;
   border: none;
+
+  @include base.tablet {
+    padding-right: 44px;
+  }
 }
 
 .form-field__control::placeholder {

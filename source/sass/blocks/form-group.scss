@@ -3,12 +3,12 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  padding: 24px 20px;
+  width: 100%;
+  padding: 0 0 20px;
   border: none;
   border-top: 1px solid base.$bg-light-gray;
 
   @include base.tablet {
-    padding: 0;
     border: none;
   }
 }
@@ -49,7 +49,6 @@
 }
 
 .form-group__title {
-  margin: 0 0 20px;
   text-align: center;
 }
 
