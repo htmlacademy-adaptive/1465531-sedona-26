@@ -98,7 +98,7 @@
   align-items: center;
   padding: 26px 32px;
   text-align: center;
-  background-color: base.$bg-light-gray;
+  background-color: base.$bg-lighten-gray;
 
   @include base.tablet {
     width: 256px;
@@ -111,7 +111,7 @@
   top: 0;
   width: 85%;
   height: 1px;
-  background-color: base.$bg-gray;
+  background-color: base.$bg-middle-gray;
 }
 
 .feature__subtitle--theme-dark {

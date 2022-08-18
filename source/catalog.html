@@ -95,7 +95,7 @@
           <a class="card__link" href="#">
             <img class="card__img" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Шоссе через лес с высоты птичьего полета.">
           </a>
-          <div class="card__inner">
+          <div class="card__inner card__inner--theme-dark">
             <div class="card__info">
               <h3 class="card__title caption">Дорога на север</h3>
               <p class="card__author">Автор фото: Петр</p>
@@ -140,7 +140,10 @@
           </div>
         </div>
         <a class="advertisement__pleer" href="#">
-          <img class="advertisement__img" src="img/video-mobile.jpg" width="280" height="177" alt="Седона, Аризона - край рыжих скал и волшебных ветров.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+            <img class="advertisement__img" src="img/video-mobile.jpg" width="280" height="177" alt="Седона, Аризона - край рыжих скал и волшебных ветров.">
+          </picture>
           <button class="advertisement__play-button" type="button">
             <svg class="advertisement__icon" aria-hidden="true" focusable="false" width="48" height="55" viewbox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" fill-opacity="0.7"/>

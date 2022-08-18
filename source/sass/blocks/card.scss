@@ -7,8 +7,8 @@
   line-height: 21px;
   font-weight: 400;
   color: base.$text-gray;
-  border-top: 1px solid base.$bg-middle-gray;
-  border-bottom: 1px solid base.$bg-middle-gray;
+  border-top: 1px solid base.$bg-light-gray;
+  border-bottom: 1px solid base.$bg-light-gray;
 
   @include base.tablet {
     display: flex;
@@ -40,7 +40,11 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: base.$bg-very-light-gray;
+    background-color: base.$bg-basic-gray;
+
+    &--theme-dark {
+      background-color: base.$bg-inert-gray;
+    }
   }
 }
 
