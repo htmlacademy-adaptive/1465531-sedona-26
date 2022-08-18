@@ -17,7 +17,14 @@
     width: 324px;
     min-height: 347px;
     padding: 0;
+    background-color: base.$bg-basic-gray;
     border: none;
+  }
+}
+
+.card--theme-dark {
+  @include base.tablet {
+    background-color: base.$bg-inert-gray;
   }
 }
 
@@ -26,6 +33,11 @@
     width: 648px;
     min-height: 480px;
   }
+}
+
+.card__img {
+  display: block;
+  width: 100%;
 }
 
 .card__img--wide {
@@ -40,11 +52,6 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: base.$bg-basic-gray;
-
-    &--theme-dark {
-      background-color: base.$bg-inert-gray;
-    }
   }
 }
 
