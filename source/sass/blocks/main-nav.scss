@@ -1,28 +1,50 @@
 @use "../base.scss";
 
 .main-nav {
-  position: static;
+  // position: static;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: base.$text-white;
+
+  @include base.tablet {
+    font-size: 14px;
+    line-height: 21px;
+    color: base.$text-black;
+  }
 }
 
 .main-nav__wrapper {
   background-color: base.$bg-blue;
+
+  @include base.tablet {
+    background-color: base.$bg-white;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include base.tablet {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .main-nav__item + .main-nav__item {
   box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__item--layout {
+  @include base.tablet {
+    grid-column: 4 / 5;
+  }
 }
 
 .main-nav__link {
@@ -31,10 +53,19 @@
   text-decoration: none;
   text-align: center;
   color: inherit;
+
+  @include base.tablet {
+    padding: 18px 24px;
+    background-color: inherit;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
+
+  @include base.tablet {
+    display: none;
+  }
 }
