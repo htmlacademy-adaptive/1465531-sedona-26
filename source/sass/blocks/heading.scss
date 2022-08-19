@@ -30,10 +30,10 @@
   line-height: 26px;
   font-weight: 700;
   color: base.$text-black;
+}
 
-  &--accent {
-    font-size: 21px;
-  }
+.heading__title--accent {
+  font-size: 21px;
 }
 
 .heading__subtitle {
