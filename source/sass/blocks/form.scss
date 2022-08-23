@@ -13,6 +13,14 @@
   }
 }
 
+.form__group {
+  margin: 0;
+}
+
+.form__group:not(:last-of-type) {
+  border-bottom: 1px solid base.$bg-light-gray;
+}
+
 .form__inner {
   display: flex;
   flex-direction: column;
