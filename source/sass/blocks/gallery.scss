@@ -1,17 +1,14 @@
 @use "../base.scss";
 
 .gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @include base.tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 60px;
   }
 
   @include base.desktop {
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
 }
@@ -22,8 +19,13 @@
   border-bottom: 1px solid base.$bg-light-gray;
 
   @include base.tablet {
+    grid-column: 1 / 3;
     margin: 0 auto;
     border: none;
+  }
+
+  @include base.desktop {
+    grid-column: 1 / 4;
   }
 }
 
