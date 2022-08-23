@@ -2,6 +2,7 @@
 
 .feedback__wrapper {
   padding: 36px 0 28px;
+  border-bottom: 1px solid base.$bg-light-gray;
 
   @include base.tablet {
     padding: 64px 0 102px;

@@ -3,14 +3,13 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 20px 0 20px;
+  margin: 0;
+  padding: 20px;
   border: none;
-  border-top: 1px solid base.$bg-light-gray;
+}
 
-  @include base.tablet {
-    border: none;
-  }
+.form-group:not(:last-of-type) {
+  border-bottom: 1px solid base.$bg-light-gray;
 }
 
 .form-group--initials {
@@ -61,6 +60,7 @@
   text-align: center;
 
   @include base.tablet {
+    width: 100%;
     margin-bottom: 28px;
   }
 }

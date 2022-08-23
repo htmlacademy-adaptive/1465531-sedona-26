@@ -1,8 +1,6 @@
 @use "../base.scss";
 
 .form {
-  padding: 0 20px;
-
   @include base.tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
