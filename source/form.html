@@ -48,32 +48,34 @@
           </div>
         </div>
         <form class="form feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group form-group form-group--initials">
-            <legend class="form-group__title subtitle">Представьтесь:</legend>
-            <label class="form-group__field form-field">
-              <span class="form-field__label">Имя*:</span>
-              <input class="form-field__control input" type="text" name="form-name" placeholder="Пётр" required>
-            </label>
-            <label class="form-group__field form-field">
-              <span class="form-field__label">Фамилия*:</span>
-              <input class="form-field__control input" type="text" name="form-surname" placeholder="Пустота" required>
-            </label>
-            <label class="form-group__field form-field">
-              <span class="form-field__label">Отчество:</span>
-              <input class="form-field__control input" type="text" name="form-patronymic" placeholder="Викторович">
-            </label>
-          </fieldset>
-          <fieldset class="form__group form-group form-group--contacts">
-            <legend class="form-group__title subtitle">Контактная информация:</legend>
-            <label class="form-group__field form-field">
-              <span class="form-field__label">Контактный телефон*:</span>
-              <input class="form-field__control input input--phone" type="tel" name="form-phone" placeholder="Введите телефон" required>
-            </label>
-            <label class="form-group__field form-field">
-              <span class="form-field__label">Электронная почта*:</span>
-              <input class="form-field__control input input--email" type="email" name="form-email" placeholder="Введите e-mail" required>
-            </label>
-          </fieldset>
+          <div class="form__row">
+            <fieldset class="form__group form-group form-group--initials">
+              <legend class="form-group__title subtitle">Представьтесь:</legend>
+              <label class="form-group__field form-field">
+                <span class="form-field__label">Имя*:</span>
+                <input class="form-field__control input" type="text" name="form-name" placeholder="Пётр" required>
+              </label>
+              <label class="form-group__field form-field">
+                <span class="form-field__label">Фамилия*:</span>
+                <input class="form-field__control input" type="text" name="form-surname" placeholder="Пустота" required>
+              </label>
+              <label class="form-group__field form-field">
+                <span class="form-field__label">Отчество:</span>
+                <input class="form-field__control input" type="text" name="form-patronymic" placeholder="Викторович">
+              </label>
+            </fieldset>
+            <fieldset class="form__group form-group form-group--contacts">
+              <legend class="form-group__title subtitle">Контактная информация:</legend>
+              <label class="form-group__field form-field">
+                <span class="form-field__label">Контактный телефон*:</span>
+                <input class="form-field__control input input--phone" type="tel" name="form-phone" placeholder="Введите телефон" required>
+              </label>
+              <label class="form-group__field form-field">
+                <span class="form-field__label">Электронная почта*:</span>
+                <input class="form-field__control input input--email" type="email" name="form-email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="form__group form-group form-group--impression">
             <legend class="form-group__title subtitle">Ваше общее впечатление:</legend>
             <ul class="form-group__list form-list radio-list">
