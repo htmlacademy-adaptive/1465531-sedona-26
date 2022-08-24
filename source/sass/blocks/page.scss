@@ -8,21 +8,28 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  background-color: base.$bg-very-light-gray;
+  background-color: base.$bg-basic-gray;
 }
 
 .page__container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-width: 320px;
-  margin: 0 auto;
+  max-width: base.$mobile-width;
+  margin: auto;
   background-color: base.$bg-white;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+  @include base.tablet {
+    max-width: base.$tablet-width;
+  }
+
+  @include base.desktop {
+    max-width: base.$desktop-width;
+  }
 }
 
 .page__main {
@@ -34,4 +41,10 @@
   flex-direction: column;
   align-items: center;
   padding: 28px 0 22px;
+
+  @include base.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 60px;
+  }
 }

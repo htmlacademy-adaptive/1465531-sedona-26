@@ -13,6 +13,16 @@
   width: 270px;
   margin: 0 auto;
   text-align: center;
+
+  @include base.tablet {
+    width: 445px;
+  }
+}
+
+.heading__inner--wide {
+  @include base.tablet {
+    width: 484px;
+  }
 }
 
 .heading__title {
@@ -20,10 +30,10 @@
   line-height: 26px;
   font-weight: 700;
   color: base.$text-black;
+}
 
-  &--accent {
-    font-size: 21px;
-  }
+.heading__title--accent {
+  font-size: 21px;
 }
 
 .heading__subtitle {

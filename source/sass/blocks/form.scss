@@ -1,13 +1,59 @@
 @use "../base.scss";
 
+.form {
+  @include base.tablet {
+    padding: 0 60px;
+  }
+
+  @include base.desktop {
+    padding: 0 120px;
+  }
+}
+
+.form__row {
+  @include base.tablet {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+  }
+}
+
+.form__row::after {
+  @include base.tablet {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: base.$bg-middle-gray;
+  }
+}
+
 .form__group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 20px;
   margin: 0;
+  padding: 0 20px 24px;
   border: none;
-  border-top: 1px solid base.$bg-middle-gray;
+
+  @include base.tablet {
+    padding: 0 0 15px;
+  }
+}
+
+.form__group:not(:last-of-type) {
+  border-bottom: 1px solid base.$bg-light-gray;
+
+  @include base.tablet {
+    border: none;
+    border-top: 1px solid base.$bg-light-gray;
+  }
+}
+
+.form__group:last-of-type {
+  @include base.tablet {
+    border-top: 1px solid base.$bg-light-gray;
+  }
 }
 
 .form__inner {
@@ -16,6 +62,18 @@
   align-items: flex-end;
   width: 280px;
   margin: 0 auto;
+
+  @include base.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+
+  @include base.desktop {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .form__button-submit {

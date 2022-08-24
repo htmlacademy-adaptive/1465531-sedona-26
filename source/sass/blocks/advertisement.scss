@@ -1,3 +1,5 @@
+@use "../base.scss";
+
 .advertisement__inner {
   padding: 17px 0 38px;
 }
@@ -6,6 +8,13 @@
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.advertisement__img {
+  @include base.tablet {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .advertisement__play-button {

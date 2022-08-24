@@ -1,7 +1,20 @@
+@use "../base.scss";
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-header__logo {
   position: relative;
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -40px;
+  min-height: 96px;
+  margin: 0 auto -40px;
+
+  @include base.tablet {
+    position: absolute;
+    left: calc(50% - 90px);
+    width: 185px;
+    height: 96px;
+  }
 }

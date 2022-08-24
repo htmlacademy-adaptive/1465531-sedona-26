@@ -16,7 +16,7 @@
 }
 
 .popup__container {
-  width: 320px;
+  width: base.$mobile-width;
   text-align: center;
   background-color: base.$bg-white;
 }
@@ -55,5 +55,5 @@
 
 .popup__wrapper--custom-background {
   padding: 20px;
-  background-color: base.$bg-very-light-gray;
+  background-color: base.$bg-basic-gray;
 }
