@@ -99,6 +99,8 @@
 
 .features__picture {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .features__item--theme-white {
