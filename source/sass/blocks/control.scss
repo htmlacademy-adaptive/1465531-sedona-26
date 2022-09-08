@@ -1,3 +1,61 @@
+@use "../base.scss";
+
 .control {
-  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.control__input {
+  appearance: none;
+  position: absolute;
+
+  &:checked ~ .control__radio-mark::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:checked ~ .control__checkbox-mark::before {
+    background-image: url("../img/tick.svg");
+  }
+}
+
+.control__radio-mark {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: base.$bg-basic-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: base.$text-gray;
+    transition: width 0.2s, height 0.2s;
+  }
+}
+
+.control__checkbox-mark {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: base.$bg-basic-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 16px;
+    transition: width 0.2s, height 0.2s;
+  }
 }

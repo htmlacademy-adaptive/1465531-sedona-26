@@ -1,6 +1,9 @@
 @use "../base.scss";
 
 .form-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
