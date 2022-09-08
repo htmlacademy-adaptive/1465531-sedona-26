@@ -7,31 +7,17 @@
   font-weight: 400;
   text-transform: uppercase;
   color: base.$text-gray;
-  counter-set: feature;
-}
-
-.feature--order .feature__subtitle::after {
-  display: block;
-  counter-increment: feature;
-  content: "— №"counter(feature) " —";
-  margin-top: 11px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
 }
 
 .features__wrapper {
   padding: 32px 0;
 }
 
-.features__title {
-  margin: 0 0 35px;
-}
-
 .features__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  counter-reset: features;
 
   @include base.tablet {
     display: grid;
@@ -43,6 +29,20 @@
   @include base.tablet {
     grid-column: 1 / -1;
   }
+}
+
+.feature--order .feature__subtitle::after {
+  display: block;
+  counter-increment: features;
+  content: "— №"counter(features) " —";
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.features__title {
+  margin: 0 0 35px;
 }
 
 .features__sublist {

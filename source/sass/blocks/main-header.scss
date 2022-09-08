@@ -7,9 +7,7 @@
 
 .main-header__logo {
   position: relative;
-  z-index: 2;
-  min-height: 96px;
-  margin: 0 auto -40px;
+  z-index: 1;
 
   @include base.tablet {
     position: absolute;
