@@ -21,14 +21,13 @@
 }
 
 .control__radio-mark {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 46px;
   border-radius: 50%;
   background-color: base.$bg-basic-gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   &::before {
     content: "";
@@ -42,14 +41,13 @@
 }
 
 .control__checkbox-mark {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 46px;
   border-radius: 4px;
   background-color: base.$bg-basic-gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   &::before {
     content: "";
